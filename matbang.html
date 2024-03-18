@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="menu-top1">
+      <div class="menu-top2">
+        <div class="">
+          <img class="logounion" src="./img/Union.svg" alt="" />
+        </div>
+        <div class="menu-top3">
+          <svg
+            class="menu-svg"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_309_195)">
+              <path
+                d="M27.2392 3.76562H2.76076C1.2385 3.76562 0 5.00406 0 6.52826C0 8.05053 1.2385 9.28902 2.76076 9.28902H27.2392C28.7615 9.28902 30 8.05053 30 6.52826C30 5.00406 28.7615 3.76562 27.2392 3.76562Z"
+                fill="white"
+              />
+              <path
+                d="M27.2392 12.2383H2.76076C1.2385 12.2383 0 13.4767 0 15.0009C0 16.5232 1.2385 17.7617 2.76076 17.7617H27.2392C28.7615 17.7617 30 16.5232 30 15.0009C30 13.4767 28.7615 12.2383 27.2392 12.2383Z"
+                fill="white"
+              />
+              <path
+                d="M27.2392 20.7109H2.76076C1.2385 20.7109 0 21.9494 0 23.4736C0 24.9958 1.2385 26.2343 2.76076 26.2343H27.2392C28.7615 26.2343 30 24.9958 30 23.4736C30 21.9494 28.7615 20.7109 27.2392 20.7109Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_309_195">
+                <rect width="30" height="30" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <div class="menu-bottom1">
+        <div class="menu-bottom2">
+          <ul class="menu-b">
+            <li><a href="" class="menu-1">Trang chủ</a></li>
+            <li><a href="" class="menu-1">Tổng quan dự án</a></li>
+            <li><a href="" class="menu-1">Thư viện</a></li>
+            <li><a href="" class="menu-1">Mặt bằng</a></li>
+            <li><a href="" class="menu-1">Tin tức</a></li>
+            <li><a href="" class="menu-1">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="menu-bottom3"></div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(document).on("click", ".menu-top3", function () {
+          $(".menu-top1").toggleClass("open");
+        });
+        $(document).on("click", ".menu-bottom3", function () {
+          $(".menu-top1").removeClass("open");
+        });
+      });
+    </script>
+    <div class="header">
+      <div class="header__top d-flex justify-content-end">
+        <div class="header__top-one">Thông tin liên hệ</div>
+        <div class="header__top-two">
+          <span><img class="koko" src="./img/tamgiac.svg" alt="" /></span>Video
+          giới thiệu
+        </div>
+      </div>
+      <div class="header__max">
+        <ul class="header__the">
+          <li><a href="" class="header__the-one">Trang chủ</a></li>
+          <li><a href="" class="header__the-one">Tổng quan dự án</a></li>
+          <li><a href="" class="header__the-one">Thư viện</a></li>
+          <li><a href="" class="header__the-one">Mặt bằng</a></li>
+          <li><a href="" class="header__the-one">Tin tức</a></li>
+          <li><a href="" class="header__the-one">Liên hệ</a></li>
+        </ul>
+        <img class="logounion" src="./img/Union.svg" alt="" />
+        <div class="header__end">
+          <img src="./img/logo-lephong.svg" alt="" />
+          <img src="./img/Logo 1.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="banner__matbang"></div>
+    <div class="nangcao">
+      <div class="container">
+        <div class="nangcao__top">
+          <div class="nangcao__suckhoe">
+            <div class="nangcao__suckhoe-one">
+              Emerald 68 giúp nâng cao chất lượng cuộc sống, sức khỏe tinh thần
+              và thể chất của cư dân lên một tầm cao mới bằng cách kết hợp nhiều
+              mảng xanh vào không gian sống và sinh hoạt đa chiều.
+            </div>
+          </div>
+          <div></div>
+          <div class="nangcao__dienhinh">
+            <div class="nangcao__dienhinh-one">
+              Điển hình là vườn sức khỏe với không gian thiên không thoáng mát,
+              sự kết hợp hoàn mĩ giữa ánh sáng thiên nhiên,cây xanh và cách bày
+              trí Bên cạnh đó con đường massage ngọc lục bảo, vườn tình yêu với
+              nhiều loại hoa tình yêu và hoa hạnh phúc, vườn tri thức với
+              thưviện ngọc lục bảo,... càng tôn lên điểm sáng cho dự án, tạo cảm
+              giác mát mẻ, thư thái cho cư dân. Ngoài ra, 4 tầng tiện ích đa
+              dạng chồng chất với hơn 20 tiện ích đan xen và 17 căn shophouse
+              tạo điều kiện thuận lợi cho mua sắm và đáp ứng các nhu cầu của cư
+              dân nơi đây.
+            </div>
+          </div>
+        </div>
+        <div class="nangcao__padding">
+          <div class="nangcao__bando">
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane imgtoaA fade show active"
+                id="pills-home"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+                tabindex="0"
+              >
+                <img src="./img/matbang1.png" alt="" />
+              </div>
+              <div
+                class="tab-pane imgtoaB fade"
+                id="pills-profile"
+                role="tabpanel"
+                aria-labelledby="pills-profile-tab"
+                tabindex="0"
+              >
+                <img src="./img/matbang1.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="nangcao__matbang">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nangcao__matbang-one active"
+                  id="pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target=".imgtoaA,.toaA"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true"
+                >
+                  Mặt bằng tòa A
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nangcao__matbang-one"
+                  id="pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target=" .imgtoaB,.toaB"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-profile"
+                  aria-selected="false"
+                >
+                  Mặt bằng tòa B
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="nangcao__canhomin">
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane toaA fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <div class="nangcao__canho">
+                <div class="nangcao__phongngumax">
+                  <div class="nangcao__phongngu">
+                    <div class="nangcao__phongngu-one">căn hộ 3 phòng ngủ</div>
+                    <div class="nangcao__phongngu-two">A02, A09, A10</div>
+                  </div>
+                  <div class="nangcao__sophongmax">
+                    <div class="nangcao__sophong">
+                      <div class="nangcao__sophong-one">Số phòng ngủ</div>
+                      <div class="nangcao__sophong-two">3 phòng</div>
+                    </div>
+                    <div class="nangcao__sophong">
+                      <div class="nangcao__sophong-one">Số phòng WC</div>
+                      <div class="nangcao__sophong-two">2 phòng</div>
+                    </div>
+                    <div class="nangcao__sophong">
+                      <div class="nangcao__sophong-one">
+                        Diện tích thông thủy
+                      </div>
+                      <div class="nangcao__sophong-two">73.6m2</div>
+                    </div>
+                    <div class="nangcao__sophong">
+                      <div class="nangcao__sophong-one">
+                        Diện tích tim tường
+                      </div>
+                      <div class="nangcao__sophong-two">69.3m2</div>
+                    </div>
+                  </div>
+                  <img src="./img/matbang2.png" alt="" />
+                </div>
+                <div class="nangcao__images">
+                  <img src="./img/matbang3.png" alt="" />
+                </div>
+                <div class="img">
+                  <img src="./img/phongngu.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane toaB fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+              tabindex="0"
+            >
+              <div class="nangcao__canho">
+                <div class="nangcao__phongngumax">
+                  <div class="nangcao__phongngu">
+                    <div class="nangcao__phongngu-one">căn hộ 3 phòng ngủ</div>
+                    <div class="nangcao__phongngu-two">A02, A09, A10</div>
+                  </div>
+                  <div class="nangcao__sophongmax">
+                    <div class="nangcao__sophong">
+                      <div class="nangcao__sophong-one">Số phòng ngủ</div>
+                      <div class="nangcao__sophong-two">3 phòng</div>
+                    </div>
+                    <div class="nangcao__sophong">
+                      <div class="nangcao__sophong-one">Số phòng WC</div>
+                      <div class="nangcao__sophong-two">2 phòng</div>
+                    </div>
+                    <div class="nangcao__sophong">
+                      <div class="nangcao__sophong-one">
+                        Diện tích thông thủy
+                      </div>
+                      <div class="nangcao__sophong-two">73.6m2</div>
+                    </div>
+                    <div class="nangcao__sophong">
+                      <div class="nangcao__sophong-one">
+                        Diện tích tim tường
+                      </div>
+                      <div class="nangcao__sophong-two">69.3m2</div>
+                    </div>
+                  </div>
+                  <img src="./img/matbang2.png" alt="" />
+                </div>
+                <div class="nangcao__images">
+                  <img src="./img/matbang3.png" alt="" />
+                </div>
+                <div class="img">
+                  <img src="./img/phongngu.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lienhe">
+      <div class="container">
+        <div class="lienhe__top">
+          <div class="lienhe__top-one">Liên hệ</div>
+          <div class="lienhe__top-two">
+            Liên hệ nhân viên tư vấn để được cập nhật thông tin chính xác hoặc
+            để lại thông tin tại đây
+          </div>
+        </div>
+        <div class="lienhe__max">
+          <div class="lienhe__max-input">
+            <input type="text" placeholder="Họ và tên" />
+          </div>
+          <div class="lienhe__max-input">
+            <input type="number" placeholder="Số điện thoại" />
+          </div>
+          <div class="lienhe__max-input">
+            <input type="text" placeholder="Email" />
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button class="lienhe__button">
+            Gửi yêu cầu liên hệ<span
+              ><img src="./img/arrow-up-right.png" alt=""
+            /></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__the">
+            <img class="footer__the-img" src="./img/logofooter.svg" alt="" />
+            <div class="footer__the-div">
+              <a class="footer__the-text">tải tài liệu dự án</a>
+            </div>
+          </div>
+          <div class="footer__thongtin">
+            <div class="footer__thongtin-text">Thông tin liên hệ</div>
+            <div class="footer__thongtin-icons">
+              <img class="hhi" src="./img/Iconfooter1.svg" alt="" />
+              <span class="footer__thongtin-one">
+                Phường Vĩnh Phú, Thành phố Thuận An, Bình Dương
+              </span>
+            </div>
+            <div class="footer__thongtin-icons">
+              <img class="hhi" src="./img/Iconfoter2.svg" alt="" />
+              <span class="footer__thongtin-one">
+                0903.79.36.79<br />
+                0285.44.33.668
+              </span>
+            </div>
+            <div class="footer__thongtin-icons">
+              <img class="hhi" src="./img/Iconfoter3.svg" alt="" />
+              <span class="footer__thongtin-one"> contact@lephong.vn </span>
+            </div>
+          </div>
+          <div class="footer__hiuhiu"></div>
+          <div class="footer__thongtin">
+            <div class="footer__thongtin-text">Danh mục</div>
+            <ul class="footer__thongtin-max">
+              <li class="footer__thongtin-one">
+                <a href=""></a>Tổng quan dự án
+              </li>
+              <li class="footer__thongtin-onee"><a href=""></a>Thư viện</li>
+              <li class="footer__thongtin-onee"><a href=""></a>Tin tức</li>
+              <li class="footer__thongtin-onee"><a href=""></a>Liên hệ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banquyen">
+      <div class="container">
+        <div class="banquyen__max">
+          <div class="banquyen__top">
+            <span class="banquyen__top_text"> ©2023 Bản quyền thuộc về </span>
+            <img class="banquyen__img" src="./img/logolephong.svg" alt="" />
+            <img class="banquyen__img" src="./img/buiding.svg" alt="" />
+          </div>
+          <div class="banquyen__end">
+            <span class="banquyen__end-text"> Design and Development by </span>
+            <img src="./img/logo-twok.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hotline">
+      <img class="fab" src="img/FAB.svg" alt="" />
+    </div>
+    <script>
+      $('button[data-bs-toggle="pill"]').on("show.bs.tab", function (e) {
+        let target = $(e.target).data("bs-target");
+        $(target)
+          .addClass("active show")
+          .siblings(".tab-pane.active")
+          .removeClass("active show");
+      });
+    </script>
+  </body>
+</html>

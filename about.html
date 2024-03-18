@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="menu-top1">
+      <div class="menu-top2">
+        <div class="">
+          <img class="logounion" src="./img/Union.svg" alt="" />
+        </div>
+        <div class="menu-top3">
+          <svg
+            class="menu-svg"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_309_195)">
+              <path
+                d="M27.2392 3.76562H2.76076C1.2385 3.76562 0 5.00406 0 6.52826C0 8.05053 1.2385 9.28902 2.76076 9.28902H27.2392C28.7615 9.28902 30 8.05053 30 6.52826C30 5.00406 28.7615 3.76562 27.2392 3.76562Z"
+                fill="white"
+              />
+              <path
+                d="M27.2392 12.2383H2.76076C1.2385 12.2383 0 13.4767 0 15.0009C0 16.5232 1.2385 17.7617 2.76076 17.7617H27.2392C28.7615 17.7617 30 16.5232 30 15.0009C30 13.4767 28.7615 12.2383 27.2392 12.2383Z"
+                fill="white"
+              />
+              <path
+                d="M27.2392 20.7109H2.76076C1.2385 20.7109 0 21.9494 0 23.4736C0 24.9958 1.2385 26.2343 2.76076 26.2343H27.2392C28.7615 26.2343 30 24.9958 30 23.4736C30 21.9494 28.7615 20.7109 27.2392 20.7109Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_309_195">
+                <rect width="30" height="30" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <div class="menu-bottom1">
+        <div class="menu-bottom2">
+          <ul class="menu-b">
+            <li><a href="" class="menu-1">Trang chủ</a></li>
+            <li><a href="" class="menu-1">Tổng quan dự án</a></li>
+            <li><a href="" class="menu-1">Thư viện</a></li>
+            <li><a href="" class="menu-1">Mặt bằng</a></li>
+            <li><a href="" class="menu-1">Tin tức</a></li>
+            <li><a href="" class="menu-1">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="menu-bottom3"></div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(document).on("click", ".menu-top3", function () {
+          $(".menu-top1").toggleClass("open");
+        });
+        $(document).on("click", ".menu-bottom3", function () {
+          $(".menu-top1").removeClass("open");
+        });
+      });
+    </script>
+    <div class="header">
+      <div class="header__top d-flex justify-content-end">
+        <div class="header__top-one">Thông tin liên hệ</div>
+        <div class="header__top-two">
+          <span><img class="koko" src="./img/tamgiac.svg" alt="" /></span>Video
+          giới thiệu
+        </div>
+      </div>
+      <div class="header__max">
+        <ul class="header__the">
+          <li><a href="" class="header__the-one">Trang chủ</a></li>
+          <li><a href="" class="header__the-one">Tổng quan dự án</a></li>
+          <li><a href="" class="header__the-one">Thư viện</a></li>
+          <li><a href="" class="header__the-one">Mặt bằng</a></li>
+          <li><a href="" class="header__the-one">Tin tức</a></li>
+          <li><a href="" class="header__the-one">Liên hệ</a></li>
+        </ul>
+        <img class="logounion" src="./img/Union.svg" alt="" />
+        <div class="header__end">
+          <img src="./img/logo-lephong.svg" alt="" />
+          <img src="./img/Logo 1.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="banner__about"></div>
+    <!-- <div class="tapdoan">
+      <div class="container">
+        <div class="tapdoan__top">
+          <div class="tapdoan__image">
+            <img class="img-two" src="./img/duoitron.png" alt="" />
+          </div>
+          <div class="tapdoan__max">
+            <div class="tapdoan__camhung">
+              <div class="tapdoan__camhung-three">
+                <img src="./img/Union.svg" alt="" />
+              </div>
+              <div class="tapdoan__camhung-one">
+                Cảm hứng từ Ngọc Lục Bảo mang đến may mắn và tài lộc cho gia chủ
+              </div>
+              <div class="tapdoan__camhung-two">
+                Tập đoàn Lê Phong và Coteccons đã chung tay kiến tạo nên dự án
+                căn hộ cao cấp The Emerald 68.<br />
+                <p></p>
+                Thiết kế mặt dựng dự án lấy cảm cảm hứng từ những giác cắt của
+                viên Ngọc Lục Bảo, lấp lánh dưới ánh sáng mặt trời mang đến hiệu
+                ứng thị giác sang trọng.<br />
+                <p></p>
+                Bên cạnh đó,thấu hiểu nhu cầu AN CƯ của khách hàng, chúng tôi
+                quan tâm đến từng chi tiết nhỏ nhất trong thiết kế, không chỉ bố
+                trí mặt bằng hợp lý, chất lượng công trình, chúng tôi còn cung
+                cấp các giải pháp chống ồn, chống nắng, tiết kiệm năng lượng...
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tapdoan__vongxanh">
+          <img class="img-one" src="./img/vongxanh.png" alt="" />
+        </div>
+        <div class="tapdoan__vien">
+          <img src="./img/vienunion.png" alt="">
+        </div>
+      </div>
+    </div> -->
+    <div class="tapdoan__phattrien-ok">
+      <div class="container">
+        <div class="tapdoan__phattrien">
+          <div class="tapdoan__donvi">
+            <div class="tapdoan__donvi-one">Đơn vị phát triển</div>
+            <div class="tapdoan__donvi-two">
+              Công ty Cổ phần Tập đoàn Lê Phong và Công ty Cổ phần Xây dựng
+              Coteccons
+            </div>
+            <div class="tapdoan__donvi-three">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              odio nulla, congue nec condimentum sit amet, vestibulum at magna.
+              Nunc efficitur metus lorem, a aliquet erat rhoncus ultrices.
+              Phasellus sit amet tempor diam. Sed feugiat condimentum tincidunt.
+            </div>
+            <div class="tapdoan__button">
+              <a class="tapdoan__button-one">WEbsite lê phong</a>
+              <a class="tapdoan__button-one">website coteccons</a>
+            </div>
+          </div>
+          <div></div>
+          <div class="tapdoan__image">
+            <img class="imgages_anh" src="./img/anhN.png" alt="" />
+          </div>
+        </div>
+        <div class="tapdoan__netan">
+          <img src="./img/netan.svg" alt="" />
+        </div>
+      </div>
+      <div class="songluon">
+        <img src="./img/song.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="noibat">
+      <div class="container">
+        <div class="noibat__top">
+          <div class="noibat__top-text">Ưu điểm nổi bật</div>
+          <div class="noibat__max">
+            <div class="noibat__vitri">
+              <img src="./img/Group.svg" alt="" />
+              <div class="noibat__vitri-one">Vị trí kim cương</div>
+              <div class="noibat__vitri-two">
+                Tọa lạc ngay vị trí đắc địa, "tam cận" và tiếp giáp khu Đông Sài
+                Gòn, chỉ mất 5 - 20p để di chuyển vào trung tâm các các thành
+                phố và các tiện ích liền kề
+              </div>
+            </div>
+            <div class="noibat__vitri">
+              <img src="./img/Frame.svg12.svg" alt="" />
+              <div class="noibat__vitri-one">Tiện ích đa dạng bậc nhất</div>
+              <div class="noibat__vitri-two">
+                Hơn 20 tiệc ích phong cách Ngọc Lục Bảo hứa hẹn mang đến cho cư
+                dân một chốn đi về lý tưởng.
+              </div>
+            </div>
+            <div class="noibat__vitri">
+              <img src="./img/Frame.svg11.svg" alt="" />
+              <div class="noibat__vitri-one">Sản phẩm mang giá trị thật</div>
+              <div class="noibat__vitri-two">
+                Bên cạnh vị trí đắc địa do Lê Phong khai phá, The Emerald còn
+                được xây dưng bởi đội ngũ kỹ sư tâm huyết của Coteccons, chăm
+                chút đến từng chi tiết, phụ vụ nhuc ầu ở thực của người dân tại
+                khu vực bình Dương và TP.HCM.
+              </div>
+            </div>
+            <div class="noibat__vitri">
+              <img src="./img/Frame.svg3.svg" alt="" />
+              <div class="noibat__vitri-one">
+                Khu căn hộ phong cách nhiệt đới đầu tiên tại Bình Dương
+              </div>
+              <div class="noibat__vitri-two">
+                Sở hữu phong cách ven sông, được chủ đầu từ thiết kế thêm nhiều
+                mảng xanh đặt biệt mang đến các mảng xanh cho gia chủ một không
+                gian sống lý tưởng như resort.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="images">
+        <div class="images__max">
+          <div class="images__top">
+            <div class="images__top-one">
+              <img src="./img/anh1.png" alt="" />
+            </div>
+            <div class="images__top-two">
+              <img src="./img/anh2.png" alt="" />
+              <img src="./img/anh5.png" alt="" />
+            </div>
+          </div>
+          <div class="images__min">
+            <div class="images__min-one">
+              <img src="./img/anh3.png" alt="" />
+              <img src="./img/anh4.png" alt="" />
+            </div>
+            <div class="images__min-two">
+              <img src="./img/anh6.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vitriduan">
+        <div class="container">
+          <div class="vitriduan__top">
+            <div class="vitriduan__top-text">Vị trí dự án</div>
+          </div>
+          <div class="vitriduan__max">
+            <div class="vitriduan__toalac">
+              <div class="vitriduan__toalac-one">
+                Tọa lạc tại 68 Đường Vĩnh Phú 16, Phường Vĩnh Phú, Thành phố
+                Thuận An, Bình Dương.<br />
+                <p></p>
+                Ngay cửa ngõ tiếp giáp khu Đông Sài Gòn - một vị trí chiến lược
+                cho việc kết nối với các trục giao thông quan trọng như Đại lộ
+                Bình Dương, Quốc lộ 13, Lê Hồng Phong, Nguyễn Thị Minh Khai, Thủ
+                Khoa Huân, và Phạm Văn Đồng.
+              </div>
+              <div class="vitriduan__toalac-two">
+                Điều này không chỉ đảm bảo khả năng kết nối liền mạch đến các
+                khu vực lân cận, mà còn mang lại lợi ích cho việc di chuyển đến
+                trung tâm TP. Hồ Chí Minh. Ngoài ra đây còn là vị trí tiềm năng
+                về giá cả trong tương lai nhờ sự phát triển và mở rộng của khu
+                vực. Có thể nói đây là "vị trí đắt địa cho tương lai đắt
+                giá".<br />
+                <p></p>
+                Thuận lợi di chuyển đến các điểm đến nổi bậc và quan trọng như
+                các trung tâm thương mại, sân bay , bệnh viên, khu vui chơi giải
+                trí
+              </div>
+            </div>
+            <div></div>
+            <div class="vitriduan__quocte">
+              <div class="vitriduan__phut">
+                <div class="vitriduan__thuduc">
+                  <div class="vitriduan__thuduc-one">5</div>
+                  <div class="vitriduan__thuduc-two">phút</div>
+                </div>
+                <div class="vitriduan__thuduc-three">
+                  Ngã 4 Bình Phước - Thủ Đức, BV Quốc tế Hạnh Phúc, BV Quốc tế
+                  Becamex, BV columbia Asian, BV An Phú, Lotte Mart
+                </div>
+              </div>
+              <div class="vitriduan__phut">
+                <div class="vitriduan__thuduc">
+                  <div class="vitriduan__thuduc-one">10</div>
+                  <div class="vitriduan__thuduc-two">phút</div>
+                </div>
+                <div class="vitriduan__thuduc-three">
+                  Aeon Mall, Sân golf Sông Bé, KCN VSIP 1
+                </div>
+              </div>
+              <div class="vitriduan__phut">
+                <div class="vitriduan__thuduc">
+                  <div class="vitriduan__thuduc-one">15</div>
+                  <div class="vitriduan__thuduc-two">phút</div>
+                </div>
+                <div class="vitriduan__thuduc-three">
+                  Giga Mall, White Palace, ĐH Quốc Gia HCM
+                </div>
+              </div>
+              <div class="vitriduan__phut">
+                <div class="vitriduan__thuduc">
+                  <div class="vitriduan__thuduc-one">20</div>
+                  <div class="vitriduan__thuduc-two">phút</div>
+                </div>
+                <div class="vitriduan__thuduc-three">
+                  KDL Sinh thái Hồ Lang, Công viên Bicosi, sân bay Tân Sơn Nhất,
+                  Trung tâm Quận 1 - TP. Hồ Chí Minh
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./img/Frame 79.png" alt="" />
+    <div class="bidv">
+      <div class="bidv__top">
+        <div class="bidv__top-img">
+          <img src="./img/the51.svg" alt="" />
+        </div>
+      </div>
+      <div class="bidv__top">
+        <div class="bidv__top-img">
+          <img src="./img/the51.svg" alt="" />
+        </div>
+      </div>
+      <div class="bidv__top">
+        <div class="bidv__top-img">
+          <img src="./img/the51.svg" alt="" />
+        </div>
+      </div>
+      <div class="bidv__top">
+        <div class="bidv__top-img">
+          <img src="./img/the51.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <img src="./img/Line 266.png" alt="" />
+    <div class="hoanthien">
+      <div class="container">
+        <div class="hoanthien__top">
+          <div class="hoanthien__top-text">
+            Để hoàn thiện Viên Ngọc Lục Bảo - The Emerald 68 chúng tôi lựa chọn
+            những đối tác uy tín trong việc mang đến cho khách hàng những trải
+            nghiệm tốt nhất.
+          </div>
+        </div>
+        <div class="hoanthien__max">
+          <div class="hoanthien__thietke">
+            <img src="./img/Layer_1.svg" alt="" />
+            <div class="hoanthien__thietke-text">
+              Tổng thầu thiết kế và thi công, công ty thuộc
+            </div>
+          </div>
+          <div class="hoanthien__thietke">
+            <img src="./img/Layer_2.svg" alt="" />
+            <div class="hoanthien__thietke-text">
+              Ngân hàng TMCP Đầu tư và Phát triển Việt Nam
+            </div>
+          </div>
+          <div class="hoanthien__thietke">
+            <img src="./img/Layer_3.svg" alt="" />
+            <div class="hoanthien__thietke-text">
+              Với uy tín bền vững trên thị trường, Tập đoàn Khải Hoàn Land hiện
+              là đối tác chiến lược - hợp tác phát triển và phân phối các dự án
+              của gần 100 chủ đầu tư danh tiếng trong và ngoài nước. Khải Hoàn
+              Land cam kết đem đến cho khách hàng nhiều lựa chọn với kho dự án
+              đa dạng và chất lượng.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lienhe">
+      <div class="container">
+        <div class="lienhe__top">
+          <div class="lienhe__top-one">Liên hệ</div>
+          <div class="lienhe__top-two">
+            Liên hệ nhân viên tư vấn để được cập nhật thông tin chính xác hoặc
+            để lại thông tin tại đây
+          </div>
+        </div>
+        <div class="lienhe__max">
+          <div class="lienhe__max-input">
+            <input type="text" placeholder="Họ và tên" />
+          </div>
+          <div class="lienhe__max-input">
+            <input type="number" placeholder="Số điện thoại" />
+          </div>
+          <div class="lienhe__max-input">
+            <input type="text" placeholder="Email" />
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button class="lienhe__button">
+            Gửi yêu cầu liên hệ<span
+              ><img src="./img/arrow-up-right.png" alt=""
+            /></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__the">
+            <img class="footer__the-img" src="./img/logofooter.svg" alt="" />
+            <div class="footer__the-div">
+              <a class="footer__the-text">tải tài liệu dự án</a>
+            </div>
+          </div>
+          <div class="footer__thongtin">
+            <div class="footer__thongtin-text">Thông tin liên hệ</div>
+            <div class="footer__thongtin-icons">
+              <img class="hhi" src="./img/Iconfooter1.svg" alt="" />
+              <span class="footer__thongtin-one">
+                Phường Vĩnh Phú, Thành phố Thuận An, Bình Dương
+              </span>
+            </div>
+            <div class="footer__thongtin-icons">
+              <img class="hhi" src="./img/Iconfoter2.svg" alt="" />
+              <span class="footer__thongtin-one">
+                0903.79.36.79<br />
+                0285.44.33.668
+              </span>
+            </div>
+            <div class="footer__thongtin-icons">
+              <img class="hhi" src="./img/Iconfoter3.svg" alt="" />
+              <span class="footer__thongtin-one"> contact@lephong.vn </span>
+            </div>
+          </div>
+          <div class="footer__hiuhiu"></div>
+          <div class="footer__thongtin">
+            <div class="footer__thongtin-text">Danh mục</div>
+            <ul class="footer__thongtin-max">
+              <li class="footer__thongtin-one">
+                <a href=""></a>Tổng quan dự án
+              </li>
+              <li class="footer__thongtin-onee"><a href=""></a>Thư viện</li>
+              <li class="footer__thongtin-onee"><a href=""></a>Tin tức</li>
+              <li class="footer__thongtin-onee"><a href=""></a>Liên hệ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banquyen">
+      <div class="container">
+        <div class="banquyen__max">
+          <div class="banquyen__top">
+            <span class="banquyen__top_text"> ©2023 Bản quyền thuộc về </span>
+            <img class="banquyen__img" src="./img/logolephong.svg" alt="" />
+            <img class="banquyen__img" src="./img/buiding.svg" alt="" />
+          </div>
+          <div class="banquyen__end">
+            <span class="banquyen__end-text"> Design and Development by </span>
+            <img src="./img/logo-twok.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hotline">
+      <img class="fab" src="img/FAB.svg" alt="" />
+    </div>
+  </body>
+</html>

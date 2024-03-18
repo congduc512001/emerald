@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="menu-top1">
+      <div class="menu-top2">
+        <div class="">
+          <img class="logounion" src="./img/Union.svg" alt="" />
+        </div>
+        <div class="menu-top3">
+          <svg
+            class="menu-svg"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_309_195)">
+              <path
+                d="M27.2392 3.76562H2.76076C1.2385 3.76562 0 5.00406 0 6.52826C0 8.05053 1.2385 9.28902 2.76076 9.28902H27.2392C28.7615 9.28902 30 8.05053 30 6.52826C30 5.00406 28.7615 3.76562 27.2392 3.76562Z"
+                fill="white"
+              />
+              <path
+                d="M27.2392 12.2383H2.76076C1.2385 12.2383 0 13.4767 0 15.0009C0 16.5232 1.2385 17.7617 2.76076 17.7617H27.2392C28.7615 17.7617 30 16.5232 30 15.0009C30 13.4767 28.7615 12.2383 27.2392 12.2383Z"
+                fill="white"
+              />
+              <path
+                d="M27.2392 20.7109H2.76076C1.2385 20.7109 0 21.9494 0 23.4736C0 24.9958 1.2385 26.2343 2.76076 26.2343H27.2392C28.7615 26.2343 30 24.9958 30 23.4736C30 21.9494 28.7615 20.7109 27.2392 20.7109Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_309_195">
+                <rect width="30" height="30" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <div class="menu-bottom1">
+        <div class="menu-bottom2">
+          <ul class="menu-b">
+            <li><a href="" class="menu-1">Trang chủ</a></li>
+            <li><a href="" class="menu-1">Tổng quan dự án</a></li>
+            <li><a href="" class="menu-1">Thư viện</a></li>
+            <li><a href="" class="menu-1">Mặt bằng</a></li>
+            <li><a href="" class="menu-1">Tin tức</a></li>
+            <li><a href="" class="menu-1">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="menu-bottom3"></div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(document).on("click", ".menu-top3", function () {
+          $(".menu-top1").toggleClass("open");
+        });
+        $(document).on("click", ".menu-bottom3", function () {
+          $(".menu-top1").removeClass("open");
+        });
+      });
+    </script>
+    <div class="header">
+      <div class="header__top d-flex justify-content-end">
+        <div class="header__top-one">Thông tin liên hệ</div>
+        <div class="header__top-two">
+          <span><img class="koko" src="./img/tamgiac.svg" alt="" /></span>Video
+          giới thiệu
+        </div>
+      </div>
+      <div class="header__max">
+        <ul class="header__the">
+          <li><a href="" class="header__the-one">Trang chủ</a></li>
+          <li><a href="" class="header__the-one">Tổng quan dự án</a></li>
+          <li><a href="" class="header__the-one">Thư viện</a></li>
+          <li><a href="" class="header__the-one">Mặt bằng</a></li>
+          <li><a href="" class="header__the-one">Tin tức</a></li>
+          <li><a href="" class="header__the-one">Liên hệ</a></li>
+        </ul>
+        <img class="logounion" src="./img/Union.svg" alt="" />
+        <div class="header__end">
+          <img src="./img/logo-lephong.svg" alt="" />
+          <img src="./img/Logo 1.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="cotteccons">
+      <div class="container">
+        <div class="cotteccons__max">
+          <div class="cotteccons__top">
+            <div class="cotteccons__top-one">
+              Coteccons tham gia đầu tư dự án căn hộ hơn 2.000 tỷ
+            </div>
+          </div>
+          <div class="cotteccons__textone">
+            <div class="cotteccons__textone-one">
+              <p>
+                Dự án The Emerald 68 tại TP Thuận An, đánh dấu sự hợp tác đầu tư
+                của Lê Phong và Coteccons, sở hữu nhiều lợi thế thu hút người
+                mua.
+              </p>
+              <p>
+                Đây là dự án đầu tiên ông lớn xây dựng Coteccons trong vai trò
+                nhà phát triển. Dự án có tổng mức đầu tư hơn 2.000 tỷ đồng,
+                thuộc phân khúc trung cao cấp, nằm trên khu đất có diện tích gần
+                8.000 m2, tọa lạc tại mặt tiền đại lộ Bình Dương và đường Vĩnh
+                Phú 16, cách TP HCM khoảng 1 km, sát địa phận TP Thủ Đức.
+              </p>
+              <p><img src="./img/cote1.png" alt="" /></p>
+              <p>
+                Theo chủ đầu tư, The Emerald 68 đã hoàn thiện giấy chấp thuận
+                chủ trương đầu tư, quy hoạch 1/500 và giấy phép xây dựng.
+              </p>
+              <p>
+                Tập đoàn Lê Phong, một chủ đầu tư của các dự án bất động sản
+                thương mại có thâm niên hơn 10 năm tại Việt Nam. Tính đến nay,
+                Lê Phong đã bán ra thị trường 10.000 sản phẩm, trong đó 90% sản
+                phẩm đã trao tay sổ hồng cho khách hàng.
+              </p>
+              <p>
+                Riêng tại thị trường Bình Dương, Lê Phong để lại dấu ấn với hơn
+                30 dự án nhà phố thương mại, khu đô thị, khu nhà ở xã hội và căn
+                hộ cao cấp. Gần đây, dân cư dự án khu căn hộ The Emerald Golf
+                View nằm cạnh Sân golf Sông Bé của tập đoàn này đã nhận sổ hồng,
+                sau 5 tháng bàn giao.
+              </p>
+              <p>
+                Trong khi đó, Coteccons, doanh nghiệp tổng thầu của nhiều dự án
+                bất động sản - nghỉ dưỡng cao cấp của các chủ đầu tư lớn như
+                Ecopark, Vinhomes, BIM Land...Từ những kinh nghiệm này,
+                Coteccons kỳ vọng mang đến cho những cư dân tương lai của The
+                Emerald 68 trải nghiệm chất lượng dự án cao cấp, đảm bảo bộ tiêu
+                chí an toàn - tỉ mỉ - bền vững - đúng tiến độ.
+              </p>
+              <p>
+                "Tại dự án căn hộ này, Coteccons lấy cuộc sống con người làm tôn
+                chỉ, mục đích để hình thành ý tưởng phát triển nơi an cư phù hợp
+                cho cư dân", đại diện chủ đầu tư cho biết.
+              </p>
+              <p>
+                Theo đó, Coteccons sẽ chú trọng triển khai từng căn hộ, từ những
+                thứ nhỏ như chất liệu hệ thống xả nước nhà vệ sinh giúp giảm
+                tiếng ồn đến áp dụng tiêu chuẩn khắt khe đối với hệ thống điện,
+                xử lý nước thải, hệ thống ánh sáng. Các kỹ sư cũng sẽ tính toán
+                các yếu tố như vị trí mặt trời, hướng gió, vị trí cửa sổ, giếng
+                trời, vật liệu hấp thụ nhiệt, mặt đứng cửa kính, phương thức tạo
+                bóng mát... để tạo không gian luôn mát mẻ, thoáng đãng.
+              </p>
+              <figure>
+                <img src="./img/cote2.png" alt="" />
+                <figcaption>Đến ngày 26/9, dự án The Emerald 68 bước đầu triển khai xây móng
+                  hầm. Ảnh: Coteccons</figcaption>
+              </figure>
+              <p>
+                Mức giá rumor (giá dự kiến) của dự án khoảng 42 triệu đồng mỗi
+                m2. Ngân hàng BIDV hỗ trợ cho vay đến 70% giá trị hợp đồng mua
+                bán. Chủ đầu tư còn hỗ trợ lãi suất 0% đến 18 tháng và ngân hàng
+                hỗ trợ ân hạn gốc đến 18 tháng. Với chính sách hỗ trợ này, chủ
+                đầu tư kỳ vọng giảm gánh nặng tài chính cho người mua nhà ở thực
+                lẫn nhà đầu tư.
+              </p>
+              <p>
+                Coteccons và Lê Phong cam kết sẽ hoàn thành dự án Emerald 68 và
+                bàn giao đúng tiến độ trong năm 2026.
+              </p>
+              <p>
+                Bình Dương được xem là một trong những trung tâm công nghiệp lớn
+                nhất Việt Nam với 28 khu công nghiệp và 10 cụm công nghiệp đang
+                hoạt động, thu hút 45.000 chuyên gia, kỹ sư nước ngoài và gần 1
+                triệu công nhân kỹ thuật cao đến làm việc. Do đó, nhu cầu thuê
+                và mua nhà tại khu vực này cũng tăng cao.
+              </p>
+              <p>
+                Những năm gần đây, Bình Dương đang đón làn sóng dịch chuyển dân
+                cư đến từ TP HCM do mặt bằng giá nhà tại thành phố liên tục tăng
+                cao. Riêng với TP Thuận An có tốc độ phát triển đô thị nhanh, hạ
+                tầng ngày càng đồng bộ, hệ thống giao thông đang trên đà hoàn
+                thiện.
+              </p>
+              <p>
+                Theo Đồ án điều chỉnh tổng thể quy hoạch chung thành phố Thuận
+                An đến năm 2040, địa phương đang có những nâng cấp toàn diện về
+                hạ tầng và cảnh quan đô thị với mục tiêu đưa Thuận An trở thành
+                đô thị loại I giai đoạn 2031- 2040. Với những lợi thế sẵn có tại
+                địa phương, The Emerald 68 được kỳ vọng mang đến lợi thế về
+                thanh khoản cho chủ sở hữu.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tintuc">
+      <div class="container">
+        <div class="tintuc__chill">
+          <div class="tintuc__doan">
+            <div class="tintuc__chung">
+              <div class="tintuc__so">
+                <div class="tintuc__so-one">13.9</div>
+                <div class="tintuc__so-two">2023</div>
+              </div>
+              <div class="tintuc__quyhoach">
+                <div class="tintuc__quyhoach-one">
+                  TP.Thuận An đón ‘cú huých’ hạ tầng trong quy hoạch đến năm
+                  2040
+                </div>
+                <div class="tintuc__quyhoach-two">
+                  Đồ án điều chỉnh quy hoạch chung đến năm 2040 của TP.Thuận An
+                  phê duyệt hàng loạt dự án hạ tầng giao thông nghìn tỉ giúp
+                  tăng khả năng kết nối đến TP.HCM, đáp ứng nhu cầu an cư của
+                  làn sóng giãn dân từ TP.HCM.
+                </div>
+                <div class="tintuc__quyhoach-three">TIN TỨC</div>
+              </div>
+            </div>
+            <div class="tintuc__image">
+              <img src="./img/Frame 113.png" alt="" />
+            </div>
+          </div>
+          <div class="tintuc__doan">
+            <div class="tintuc__chung">
+              <div class="tintuc__so">
+                <div class="tintuc__so-one">11.10</div>
+                <div class="tintuc__so-two">2023</div>
+              </div>
+              <div class="tintuc__quyhoach">
+                <div class="tintuc__quyhoach-one">
+                  Thuận An muốn hoàn thành các tiêu chí đô thị loại II trước
+                  2025
+                </div>
+                <div class="tintuc__quyhoach-two">
+                  Đồ án điều chỉnh quy hoạch chung đến năm 2040 của TP.Thuận An
+                  phê duyệt hàng loạt dự án hạ tầng giao thông nghìn tỉ giúp
+                  tăng khả năng kết nối đến TP.HCM, đáp ứng nhu cầu an cư của
+                  làn sóng giãn dân từ TP.HCM.
+                </div>
+                <div class="tintuc__quyhoach-three">SỰ KIỆN</div>
+              </div>
+            </div>
+            <div class="tintuc__image">
+              <img src="./img/tintc1.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a class="tintuc__button"> Xem thêm </a>
+        </div>
+      </div>
+    </div>
+    <div class="border__hihi"></div>
+    <div class="lienhe">
+      <div class="container">
+        <div class="lienhe__top">
+          <div class="lienhe__top-one">Liên hệ</div>
+          <div class="lienhe__top-two">
+            Liên hệ nhân viên tư vấn để được cập nhật thông tin chính xác hoặc
+            để lại thông tin tại đây
+          </div>
+        </div>
+        <div class="lienhe__max">
+          <div class="lienhe__max-input">
+            <input type="text" placeholder="Họ và tên" />
+          </div>
+          <div class="lienhe__max-input">
+            <input type="number" placeholder="Số điện thoại" />
+          </div>
+          <div class="lienhe__max-input">
+            <input type="text" placeholder="Email" />
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button class="lienhe__button">
+            Gửi yêu cầu liên hệ<span
+              ><img src="./img/arrow-up-right.png" alt=""
+            /></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__the">
+            <img class="footer__the-img" src="./img/logofooter.svg" alt="" />
+            <div class="footer__the-div">
+              <a class="footer__the-text">tải tài liệu dự án</a>
+            </div>
+          </div>
+          <div class="footer__thongtin">
+            <div class="footer__thongtin-text">Thông tin liên hệ</div>
+            <div class="footer__thongtin-icons">
+              <img class="hhi" src="./img/Iconfooter1.svg" alt="" />
+              <span class="footer__thongtin-one">
+                Phường Vĩnh Phú, Thành phố Thuận An, Bình Dương
+              </span>
+            </div>
+            <div class="footer__thongtin-icons">
+              <img class="hhi" src="./img/Iconfoter2.svg" alt="" />
+              <span class="footer__thongtin-one">
+                0903.79.36.79<br />
+                0285.44.33.668
+              </span>
+            </div>
+            <div class="footer__thongtin-icons">
+              <img class="hhi" src="./img/Iconfoter3.svg" alt="" />
+              <span class="footer__thongtin-one"> contact@lephong.vn </span>
+            </div>
+          </div>
+          <div class="footer__hiuhiu"></div>
+          <div class="footer__thongtin">
+            <div class="footer__thongtin-text">Danh mục</div>
+            <ul class="footer__thongtin-max">
+              <li class="footer__thongtin-one">
+                <a href=""></a>Tổng quan dự án
+              </li>
+              <li class="footer__thongtin-onee"><a href=""></a>Thư viện</li>
+              <li class="footer__thongtin-onee"><a href=""></a>Tin tức</li>
+              <li class="footer__thongtin-onee"><a href=""></a>Liên hệ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banquyen">
+      <div class="container">
+        <div class="banquyen__max">
+          <div class="banquyen__top">
+            <span class="banquyen__top_text"> ©2023 Bản quyền thuộc về </span>
+            <img class="banquyen__img" src="./img/logolephong.svg" alt="" />
+            <img class="banquyen__img" src="./img/buiding.svg" alt="" />
+          </div>
+          <div class="banquyen__end">
+            <span class="banquyen__end-text"> Design and Development by </span>
+            <img src="./img/logo-twok.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hotline">
+      <img class="fab" src="img/FAB.svg" alt="" />
+    </div>
+  </body>
+</html>

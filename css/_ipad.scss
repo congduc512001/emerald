@@ -1,0 +1,201 @@
+/* 992px -> 844px: ipad đứng; */
+@media (max-width: 1200px) {
+  .header {
+    display: none;
+  }
+
+  .menu-top1 {
+    display: block;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    padding: 0px 15px;
+    z-index: 9;
+    background: #17624c;
+    &.open {
+      .menu-bottom1 {
+        left: 0px;
+      }
+    }
+
+    .menu-top2 {
+      display: flex;
+      height: 60px;
+      align-items: center;
+      justify-content: center;
+      .logounion {
+        height: 24px;
+        display: block;
+      }
+      .menu-top3 {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+      }
+    }
+  }
+
+  .menu-bottom1 {
+    position: fixed;
+    top: 60px;
+    bottom: 0px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.2s;
+
+    .menu-bottom2 {
+      position: relative;
+      z-index: 1;
+      padding: 12px 0px;
+      background: black;
+      height: 100%;
+      width: 280px;
+
+      .menu-1 {
+        display: flex;
+        padding: 12px 20px;
+        align-items: flex-start;
+        gap: 10px;
+        align-self: stretch;
+        color: white;
+        @media(max-width:767px){
+          font-size: 12px;
+        }
+      }
+    }
+
+    .menu-bottom3 {
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.2);
+    }
+  }
+  .next__end {
+    flex-wrap: wrap;
+  }
+  .tintuc .tintuc__doan .tintuc__quyhoach {
+    gap: 15px;
+  }
+  .tintuc .tintuc__top .tintuc__menu {
+    padding: 10px 0px;
+  }
+  .tintuc {
+    padding: 50px 0px;
+  }
+  .theemerald .theemerald__footer {
+    grid-template-columns: 1fr 250px;
+  }
+}
+@media (max-width: 992px) {
+  .theemerald .theemerald__top {
+    margin-top: 50px;
+  }
+  .theemerald .theemerald__top .theemerald__top-one {
+    font-size: 33px;
+  }
+  .theemerald .theemerald__top .theemerald__top-two {
+    font-size: 15px;
+  }
+  .theemerald .theemerald__footer .theemerald__max .theemerald__max-one {
+    font-size: 33px;
+  }
+  .theemerald .theemerald__footer .theemerald__max .theemerald__max-two {
+    font-size: 15px;
+  }
+  .theemerald .theemerald__footer .theemerald__end .theemerald__end-one {
+    font-size: 18px;
+  }
+  .penhouse .penhouse__theemerald .penhouse__duan .penhouse__duan-one {
+    font-size: 33px;
+  }
+  .penhouse .penhouse__theemerald .penhouse__duan .penhouse__duan-two {
+    font-size: 15px;
+  }
+  .penhouse .penhouse__end .penhouse__dientich .penhouse__dientich-two {
+    font-size: 18px;
+  }
+  .shophouse .shophouse__top .shophouse__top-one {
+    font-size: 33px;
+  }
+  .shophouse .shophouse__top .shophouse__top-two {
+    font-size: 15px;
+  }
+  .shophouse .shophouse__text .shophouse__text-one {
+    font-size: 21px;
+  }
+  .shophouse .discover .discover__back .discover__max .discover__max-one {
+    font-size: 54px;
+  }
+  .shophouse .next .next__top .next__top-one {
+    font-size: 33px;
+  }
+  .shophouse .next .next__top .next__top-two {
+    font-size: 33px;
+  }
+  .shophouse .next .next__end .next__vitri .next__vitri-two {
+    font-size: 14px;
+  }
+  .doitac .doitac__text {
+    font-size: 33px;
+  }
+  .tintuc .tintuc__top .tintuc__top-one {
+    font-size: 48px;
+  }
+  .tintuc .tintuc__doan .tintuc__so .tintuc__so-one {
+    font-size: 48px;
+  }
+  .tintuc .tintuc__doan .tintuc__so .tintuc__so-two {
+    font-size: 14px;
+  }
+  .tintuc .tintuc__doan .tintuc__quyhoach .tintuc__quyhoach-one {
+    font-size: 18px;
+  }
+  .tintuc .tintuc__doan .tintuc__quyhoach .tintuc__quyhoach-two {
+    font-size: 14px;
+  }
+  .tintuc .tintuc__doan .tintuc__quyhoach .tintuc__quyhoach-three {
+    font-size: 14px;
+  }
+  .tintuc .tintuc__doan .tintuc__quyhoach {
+    margin-right: 25px;
+  }
+  .lienhe .lienhe__top .lienhe__top-one {
+    font-size: 33px;
+  }
+  .lienhe .lienhe__top .lienhe__top-two {
+    font-size: 14px;
+  }
+  .lienhe .lienhe__max .lienhe__max-input input {
+    font-size: 14px;
+  }
+  .lienhe {
+    padding: 50px 0px;
+  }
+  .footer .footer__top .footer__thongtin .footer__thongtin-text {
+    font-size: 14px;
+  }
+  .shophouse .next .next__end {
+    grid-template-columns: 1fr 1fr;
+  }
+  .tintuc .tintuc__doan .tintuc__so {
+    width: 100%;
+  }
+  .tintuc .tintuc__doan .tintuc__quyhoach {
+    gap: 5px;
+  }
+  .theemerald .theemerald__footer .theemerald__max {
+    min-height: 250px;
+  }
+  .theemerald .theemerald__footer .theemerald__end {
+    min-height: 195px;
+  }
+  .theemerald .theemerald__footer {
+    grid-template-columns: 1fr;
+  }
+  .theemerald .theemerald__footer .theemerald__end .theemerald__end-img {
+  }
+}

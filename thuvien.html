@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="menu-top1">
+      <div class="menu-top2">
+        <div class="">
+          <img class="logounion" src="./img/Union.svg" alt="" />
+        </div>
+        <div class="menu-top3">
+          <svg
+            class="menu-svg"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_309_195)">
+              <path
+                d="M27.2392 3.76562H2.76076C1.2385 3.76562 0 5.00406 0 6.52826C0 8.05053 1.2385 9.28902 2.76076 9.28902H27.2392C28.7615 9.28902 30 8.05053 30 6.52826C30 5.00406 28.7615 3.76562 27.2392 3.76562Z"
+                fill="white"
+              />
+              <path
+                d="M27.2392 12.2383H2.76076C1.2385 12.2383 0 13.4767 0 15.0009C0 16.5232 1.2385 17.7617 2.76076 17.7617H27.2392C28.7615 17.7617 30 16.5232 30 15.0009C30 13.4767 28.7615 12.2383 27.2392 12.2383Z"
+                fill="white"
+              />
+              <path
+                d="M27.2392 20.7109H2.76076C1.2385 20.7109 0 21.9494 0 23.4736C0 24.9958 1.2385 26.2343 2.76076 26.2343H27.2392C28.7615 26.2343 30 24.9958 30 23.4736C30 21.9494 28.7615 20.7109 27.2392 20.7109Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_309_195">
+                <rect width="30" height="30" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <div class="menu-bottom1">
+        <div class="menu-bottom2">
+          <ul class="menu-b">
+            <li><a href="" class="menu-1">Trang chủ</a></li>
+            <li><a href="" class="menu-1">Tổng quan dự án</a></li>
+            <li><a href="" class="menu-1">Thư viện</a></li>
+            <li><a href="" class="menu-1">Mặt bằng</a></li>
+            <li><a href="" class="menu-1">Tin tức</a></li>
+            <li><a href="" class="menu-1">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="menu-bottom3"></div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(document).on("click", ".menu-top3", function () {
+          $(".menu-top1").toggleClass("open");
+        });
+        $(document).on("click", ".menu-bottom3", function () {
+          $(".menu-top1").removeClass("open");
+        });
+      });
+    </script>
+    <div class="header">
+      <div class="header__top d-flex justify-content-end">
+        <div class="header__top-one">Thông tin liên hệ</div>
+        <div class="header__top-two">
+          <span><img class="koko" src="./img/tamgiac.svg" alt="" /></span>Video
+          giới thiệu
+        </div>
+      </div>
+      <div class="header__max">
+        <ul class="header__the">
+          <li><a href="" class="header__the-one">Trang chủ</a></li>
+          <li><a href="" class="header__the-one">Tổng quan dự án</a></li>
+          <li><a href="" class="header__the-one">Thư viện</a></li>
+          <li><a href="" class="header__the-one">Mặt bằng</a></li>
+          <li><a href="" class="header__the-one">Tin tức</a></li>
+          <li><a href="" class="header__the-one">Liên hệ</a></li>
+        </ul>
+        <img class="logounion" src="./img/Union.svg" alt="" />
+        <div class="header__end">
+          <img src="./img/logo-lephong.svg" alt="" />
+          <img src="./img/Logo 1.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="banner__thuvien"></div>
+    <div class="dienhinh">
+      <div class="container">
+        <div class="dienhinh__max">
+          <div class="dienhinh__top">
+            <div class="dienhinh__thap">
+              <div class="dienhinh__thap-one">Tháp A</div>
+              <div class="dienhinh__flex">
+                <div class="dienhinh__thap-two">39</div>
+                <div class="dienhinh__thap-three">Tầng</div>
+              </div>
+            </div>
+            <div class="dienhinh__thap">
+              <div class="dienhinh__thap-one">Tháp B</div>
+              <div class="dienhinh__flex">
+                <div class="dienhinh__thap-two">36</div>
+                <div class="dienhinh__thap-three">Tầng</div>
+              </div>
+            </div>
+          </div>
+          <div></div>
+          <div class="dienhinh__canho">
+            <div class="dienhinh__canho-one">
+              Mỗi tầng điển hình có 23 căn hộ với đa dạng loại diện tích từ 1
+              phòng ngủ, 1 phòng ngủ+, 2 phòng ngủ và 3 phòng ngủ.Hai lối vào
+              rộng rãi và 3 tầng hầm thông nhau với tổng diện tích là
+              15.528,3m2, giúp đảm bảo tiện lợi cho việc di chuyển và đỗ xe.<br />
+              <p></p>
+              Mỗi tháp xây dựng 5 Thang máy rộng rãi , thiết kế sang trọng và 2
+              lối thang bộ thuận tiện khi qua lại giữa các tầng.
+            </div>
+          </div>
+        </div>
+        <div class="dienhinh__images">
+          <div class="dienhinh__images-one"></div>
+          <img class="img__dienhinhmax" src="./img/dienhinhmax.png" alt="" />
+        </div>
+        <div class="dienhinh__text">
+          <div></div>
+          <div class="dienhinh__text-one">
+            Mỗi tháp xây dựng 5 Thang máy rộng rãi , thiết kế sang trọng và 2
+            lối thang bộ thuận tiện khi qua lại giữa các tầng.<br />
+            Hệ thống máy phát điện dự phòng được cung cấp để đảm bảo các khu vực
+            chung không bị gián đoạn khi mất điện.
+          </div>
+        </div>
+      </div>
+      <div class="vien">
+        <img src="./img/vienhihi.png" alt="">
+      </div>
+      <div class="penhouse__song">
+        <img src="./img/song.svg" alt="" />
+      </div>
+    </div>
+    <div class="dacdia">
+      <div class="dacdia__images">
+        <div class="dacdia__images-two">
+          <div class="container">
+            <img src="./img/anhdacdia.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="dacdia__vitri">
+          <div class="dacdia__duan">
+            <div class="dacdia__duan-one">1.</div>
+            <div class="dacdia__antuong">
+              <div class="dacdia__antuong-one">Vị trí đắc địa</div>
+              <div class="dacdia__antuong-img">
+                <img src="./img/dacdia1.png" alt="" />
+              </div>
+              <div class="dacdia__antuong-two">
+                Với vị trí đắc địa, dự án cung cấp nhiều view nội khu và view
+                đẹp như Landmark 81, sông Sài Gòn, sông Cầu Mống, và thành phố
+                Thuận An.<br />
+                Dịch vụ quản lý nội khu vận hành chuyên nghiệp, đảm bảo cuộc
+                sống tiện nghi và thuận lợi cho cư dân.- 02 cầu nối ấn tượng
+                giữa hai tháp, được gọi là "Cầu hạnh phúc", tại tầng 20 và tầng
+                37, tạo điểm check-in độc đáo và đẹp mắt
+              </div>
+            </div>
+          </div>
+          <div class="dacdia__duan">
+            <div class="dacdia__duan-one">2.</div>
+            <div class="dacdia__antuong">
+              <div class="dacdia__antuong-one">
+                Thiết kế cao cấp đạt tiêu chuẩn Quốc tế
+              </div>
+              <div class="dacdia__antuong-img">
+                <img src="./img/dacdia2.png" alt="" />
+              </div>
+              <div class="dacdia__antuong-two">
+                Khu vực sảnh lễ tân được thiết kế cao cấp, đạt tiêu chuẩn quốc
+                tế, mang lại sự sang trọng và chuyên nghiệp.<br />
+                Thỏa thích mua sắm với 17 căn shophouse và các trung tâm thương
+                mại lân cận Ngoài ra dự án còn cung cấp đầy đủ các tiện ích với
+                không gian sống thân thiện và đáng yêu cho trẻ nhỏ và gia đình
+                như khu vực nhà trẻ, thư viện, kid & family coffee và khu vui
+                chơi trẻ em, family louge, Cabana Ngọc lục bảo.
+              </div>
+            </div>
+          </div>
+          <div class="dacdia__duan">
+            <div class="dacdia__duan-one">3.</div>
+            <div class="dacdia__antuong">
+              <div class="dacdia__antuong-one">Tiện ích ngoài trời</div>
+              <div class="dacdia__antuong-img">
+                <img src="./img/dacdia3.png" alt="" />
+              </div>
+              <div class="dacdia__antuong-two">
+                Khu vực BBQ ngoài trời, tạo cơ hội cho cư dân tổ chức các buổi
+                tiệc ngoài trời và hòa mình vào không gian xanh. <br />
+                Bên cạnh đó tầng 3 còn có Hồ bơi 4 mùa và hồ sục Jacuzzi 4 mùa,
+                tràn viền rộng 334m2 tuyệt đẹp, giúp thư giản và giải trí.
+              </div>
+            </div>
+          </div>
+          <div class="dacdia__duan">
+            <div class="dacdia__duan-one">4.</div>
+            <div class="dacdia__antuong">
+              <div class="dacdia__antuong-one">Kết nối cư dân</div>
+              <div class="dacdia__antuong-img">
+                <img src="./img/dacdia4.png" alt="" />
+              </div>
+              <div class="dacdia__antuong-two">
+                Phòng Sinh hoạt cộng đồng (SHCĐ) nơi gặp gỡ và tương tác giữa cư
+                dân.<br />
+                Phòng tập thể hình hiện đại, khu vực tập yoga ,tập thể dục thể
+                thao xanh mát giúp cư dân rèn luyện sức khỏe tinh thần và thể
+                chất Không gian mở dành cho các bộ môn giải trí như bóng rổ,
+                billard, cờ vua
+              </div>
+            </div>
+          </div>
+          <div class="dacdia__duan">
+            <div class="dacdia__duan-one">5.</div>
+            <div class="dacdia__antuong">
+              <div class="dacdia__antuong-one">Khu vườn tình yêu</div>
+              <div class="dacdia__antuong-img">
+                <img src="./img/dacdia4.png" alt="" />
+              </div>
+              <div class="dacdia__antuong-two">
+                Khu vườn tình yêu mang đến không gian lãng mạn với các loại cây
+                tình yêu và hạnh phúc. Bên cạnh đó, vườn ánh sáng và khu ghế
+                ngồi thư giản là nơi cư dân có thể thư giãn và trò chuyện sau
+                những ngày làm việc và học tập mệt mỏi.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lienhe">
+      <div class="container">
+        <div class="lienhe__top">
+          <div class="lienhe__top-one">Liên hệ</div>
+          <div class="lienhe__top-two">
+            Liên hệ nhân viên tư vấn để được cập nhật thông tin chính xác hoặc
+            để lại thông tin tại đây
+          </div>
+        </div>
+        <div class="lienhe__max">
+          <div class="lienhe__max-input">
+            <input type="text" placeholder="Họ và tên" />
+          </div>
+          <div class="lienhe__max-input">
+            <input type="number" placeholder="Số điện thoại" />
+          </div>
+          <div class="lienhe__max-input">
+            <input type="text" placeholder="Email" />
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button class="lienhe__button">
+            Gửi yêu cầu liên hệ<span
+              ><img src="./img/arrow-up-right.png" alt=""
+            /></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__the">
+            <img class="footer__the-img" src="./img/logofooter.svg" alt="" />
+            <div class="footer__the-div">
+              <a class="footer__the-text">tải tài liệu dự án</a>
+            </div>
+          </div>
+          <div class="footer__thongtin">
+            <div class="footer__thongtin-text">Thông tin liên hệ</div>
+            <div class="footer__thongtin-icons">
+              <img class="hhi" src="./img/Iconfooter1.svg" alt="" />
+              <span class="footer__thongtin-one">
+                Phường Vĩnh Phú, Thành phố Thuận An, Bình Dương
+              </span>
+            </div>
+            <div class="footer__thongtin-icons">
+              <img class="hhi" src="./img/Iconfoter2.svg" alt="" />
+              <span class="footer__thongtin-one">
+                0903.79.36.79<br />
+                0285.44.33.668
+              </span>
+            </div>
+            <div class="footer__thongtin-icons">
+              <img class="hhi" src="./img/Iconfoter3.svg" alt="" />
+              <span class="footer__thongtin-one"> contact@lephong.vn </span>
+            </div>
+          </div>
+          <div class="footer__hiuhiu"></div>
+          <div class="footer__thongtin">
+            <div class="footer__thongtin-text">Danh mục</div>
+            <ul class="footer__thongtin-max">
+              <li class="footer__thongtin-one">
+                <a href=""></a>Tổng quan dự án
+              </li>
+              <li class="footer__thongtin-onee"><a href=""></a>Thư viện</li>
+              <li class="footer__thongtin-onee"><a href=""></a>Tin tức</li>
+              <li class="footer__thongtin-onee"><a href=""></a>Liên hệ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banquyen">
+      <div class="container">
+        <div class="banquyen__max">
+          <div class="banquyen__top">
+            <span class="banquyen__top_text"> ©2023 Bản quyền thuộc về </span>
+            <img class="banquyen__img" src="./img/logolephong.svg" alt="" />
+            <img class="banquyen__img" src="./img/buiding.svg" alt="" />
+          </div>
+          <div class="banquyen__end">
+            <span class="banquyen__end-text"> Design and Development by </span>
+            <img src="./img/logo-twok.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hotline">
+      <img class="fab" src="img/FAB.svg" alt="" />
+    </div>
+  </body>
+</html>

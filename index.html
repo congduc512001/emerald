@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="menu-top1">
+      <div class="menu-top2">
+        <div class="">
+          <img class="logounion" src="./img/Union.svg" alt="" />
+        </div>
+        <div class="menu-top3">
+          <svg
+            class="menu-svg"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_309_195)">
+              <path
+                d="M27.2392 3.76562H2.76076C1.2385 3.76562 0 5.00406 0 6.52826C0 8.05053 1.2385 9.28902 2.76076 9.28902H27.2392C28.7615 9.28902 30 8.05053 30 6.52826C30 5.00406 28.7615 3.76562 27.2392 3.76562Z"
+                fill="white"
+              />
+              <path
+                d="M27.2392 12.2383H2.76076C1.2385 12.2383 0 13.4767 0 15.0009C0 16.5232 1.2385 17.7617 2.76076 17.7617H27.2392C28.7615 17.7617 30 16.5232 30 15.0009C30 13.4767 28.7615 12.2383 27.2392 12.2383Z"
+                fill="white"
+              />
+              <path
+                d="M27.2392 20.7109H2.76076C1.2385 20.7109 0 21.9494 0 23.4736C0 24.9958 1.2385 26.2343 2.76076 26.2343H27.2392C28.7615 26.2343 30 24.9958 30 23.4736C30 21.9494 28.7615 20.7109 27.2392 20.7109Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_309_195">
+                <rect width="30" height="30" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <div class="menu-bottom1">
+        <div class="menu-bottom2">
+          <ul class="menu-b">
+            <li><a href="" class="menu-1">Trang chủ</a></li>
+            <li><a href="" class="menu-1">Tổng quan dự án</a></li>
+            <li><a href="" class="menu-1">Thư viện</a></li>
+            <li><a href="" class="menu-1">Mặt bằng</a></li>
+            <li><a href="" class="menu-1">Tin tức</a></li>
+            <li><a href="" class="menu-1">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="menu-bottom3"></div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(document).on("click", ".menu-top3", function () {
+          $(".menu-top1").toggleClass("open");
+        });
+        $(document).on("click", ".menu-bottom3", function () {
+          $(".menu-top1").removeClass("open");
+        });
+      });
+    </script>
+    <div class="header">
+      <div class="header__top d-flex justify-content-end">
+        <div class="header__top-one">Thông tin liên hệ</div>
+        <div class="header__top-two">
+          <span><img class="koko" src="./img/tamgiac.svg" alt="" /></span>Video
+          giới thiệu
+        </div>
+      </div>
+      <div class="header__max">
+        <ul class="header__the">
+          <li><a href="" class="header__the-one">Trang chủ</a></li>
+          <li><a href="" class="header__the-one">Tổng quan dự án</a></li>
+          <li><a href="" class="header__the-one">Thư viện</a></li>
+          <li><a href="" class="header__the-one">Mặt bằng</a></li>
+          <li><a href="" class="header__the-one">Tin tức</a></li>
+          <li><a href="" class="header__the-one">Liên hệ</a></li>
+        </ul>
+        <img class="logounion" src="./img/Union.svg" alt="" />
+        <div class="header__end">
+          <img src="./img/logo-lephong.svg" alt="" />
+          <img src="./img/Logo 1.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="hero" src="./img/hero1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="hero" src="./img/hero1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="hero" src="./img/hero1.png" alt="" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".banner .mySwiper", {
+          navigation: {
+            nextEl: ".banner .swiper-button-next",
+            prevEl: ".banner .swiper-button-prev",
+          },
+        });
+      </script>
+    </div>
+    <div class="theemerald d-flex align-items-center">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <div class="theemerald__top">
+            <div class="theemerald__top-img">
+              <img class="green" src="./img/green-emerald 1.png" alt="" />
+            </div>
+            <div class="theemerald__top-one">
+              The Emerald 68<br />
+              Không gian sống phong cách nhiệt đới
+            </div>
+            <div class="theemerald__top-two">
+              Dự án sở hữu kiến trúc hiện đại, sang trọng và tinh tế cùng những
+              tiện ích sống thời thượng, hứa hẹn là lựa chọn xứng tầm cho cộng
+              đồng cư dân năng động. Tọa lạc nơi cửa ngõ, tiếp giáp khu Đông Sài
+              Gòn, vị trí chiến lược kết nối với các trục giao thông quan trọng
+              như Đại lộ Bình Dương, quốc lộ 13, Lê Hồng Phong, Nguyễn Thị Minh
+              Khai, Phạm Văn Đồng, Thủ Khoa Huân,... vừa đảm bảo khả năng kết
+              nối liền mạch đến các khu vực lân cận, trung tâm TP.HCM vừa đảm
+              bảo tiềm năng tăng giá hấp dẫn theo thời gian.
+            </div>
+            <div class="d-flex justify-content-center">
+              <a class="theemerald__top-three"
+                >Giới thiệu chủ đầu tư
+                <span><img src="./img/arrow-up-right.png" alt="" /></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="theemerald__footer">
+          <div class="theemerald__max">
+            <div class="theemerald__max-one">Câu chuyện Thiết kế</div>
+            <div class="theemerald__max-two">
+              Với cảm hứng từ Ngọc Lục Bảo mang đến may mắn và tài lộc cho gia
+              chủ, Tập đoàn Lê Phong và Coteccons đã chung tay kiến tạo nên dự
+              án căn hộ cao cấp The Emerald 68. Nơi đây là không gian sống mang
+              phong cách nhiệt đới tươi mới và đầy năng lượng, giúp khơi mở trọn
+              vẹn khả năng của các giác quan và mở lối cho nhiều bước tiến thăng
+              hoa.
+            </div>
+          </div>
+          <div class="theemerald__end">
+            <div class="theemerald__end-img">
+              <img src="./img/Icon.svg" alt="" />
+            </div>
+            <div class="theemerald__end-one">VIDEO GIỚI THIỆU DỰ ÁN</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="penhouse">
+      <div class="penhouse__theemerald">
+        <div class="container">
+          <div class="penhouse__grid">
+            <div class="penhouse__duan">
+              <div class="penhouse__duan-one">Tổng quan dự án</div>
+              <div class="penhouse__duan-two">
+                Dự án The Emerald 68 được ví như biểu tượng cộng đồng tinh hoa
+                tại Bình Dương, sở hữu vị trí "tam cận" đắc địa với cảm hứng
+                thiết kế từ Ngọc Lục Bảo ngụ ý mang đến cho gia chủ tài lộc và
+                may mắn. Thấu hiểu sâu sắc gu thẩm mỹ tinh tế của cư dân năng
+                động, các căn hộ được chủ đầu tư khéo léo tô điểm thêm những
+                thiết bị nội thất cao cấp nhập khẩu, mang đến không gian sống
+                đầy cảm hứng, ngập tràn cảnh sắc thiên nhiên cùng tầm nhìn ngoạn
+                mục về phía công Sài Gòn và đô thị đầy sắc màu Thuận An.
+              </div>
+              <a class="penhouse__duan-three"
+                >Mặt bằng tổng thể
+                <span><img src="./img/arrow-up-right.png" alt="" /></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="penhouse__images">
+          <img src="./img/Frame 137.png" alt="" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="penhouse__end">
+          <div class="penhouse__dientich">
+            <div class="penhouse__dientich-one">Tổng diện tích dự án</div>
+            <div class="penhouse__dientich-two">7.101,9 m2</div>
+          </div>
+          <div class="penhouse__dientich">
+            <div class="penhouse__dientich-one">Số tháp căn hộ</div>
+            <div class="penhouse__dientich-two">2 tháp</div>
+          </div>
+          <div class="penhouse__dientich">
+            <div class="penhouse__dientich-one">Số tầng nổi</div>
+            <p class="penhouse__dientich-two">
+              39 tầng (tháp A)<br />36 tầng (tháp B)
+            </p>
+          </div>
+          <div class="penhouse__dientich">
+            <div class="penhouse__dientich-one">số tầng hầm</div>
+            <div class="penhouse__dientich-two">
+              3 tầng hầm<br />
+              thông nhau
+            </div>
+          </div>
+          <div class="penhouse__dientich">
+            <div class="penhouse__dientich-one">số lượng căn hộ</div>
+            <div class="penhouse__dientich-two">770 căn</div>
+          </div>
+          <div class="penhouse__dientich">
+            <div class="penhouse__dientich-one">Các loại căn hộ</div>
+            <p class="penhouse__dientich-two">
+              1PN, 1PN + 1, 2PN, 3PN,<br />
+              Penhouse
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="penhouse__song">
+        <img src="./img/song.svg" alt="" />
+      </div>
+    </div>
+    <div class="shophouse">
+      <div class="container">
+        <div class="shophouse__top">
+          <div class="shophouse__top-one">
+            Chất sống đẳng cấp<br />
+            dành riêng cho gia đình trẻ
+          </div>
+          <div class="shophouse__top-two">
+            Dự án sở hữu kiến trúc hiện đại, sang trọng và tinh tế cùng những
+            tiện ích sống thời thượng, hứa hẹn là lựa chọn xứng tầm cho cộng
+            đồng cư dân năng động
+          </div>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="shophouse__slider">
+                <img src="./img/Frame 66.png" alt="" />
+                <div class="shophouse__text">
+                  <div class="shophouse__text-one">Vườn tri thức</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shophouse__slider">
+                <img src="./img/Frame 67.png" alt="" />
+                <div class="shophouse__text">
+                  <div class="shophouse__text-one">Shophouse</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shophouse__slider">
+                <img src="./img/Frame 68.png" alt="" />
+                <div class="shophouse__text">
+                  <div class="shophouse__text-one">Hồ bơi bốn mùa</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shophouse__slider">
+                <img src="./img/Frame 66.png" alt="" />
+                <div class="shophouse__text">
+                  <div class="shophouse__text-one">Vườn tri thức</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shophouse__slider">
+                <img src="./img/Frame 67.png" alt="" />
+                <div class="shophouse__text">
+                  <div class="shophouse__text-one">Shophouse</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shophouse__slider">
+                <img src="./img/Frame 68.png" alt="" />
+                <div class="shophouse__text">
+                  <div class="shophouse__text-one">Hồ bơi bốn mùa</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="boder__icons">
+            <img class="boder__icons-trai" src="./img/icontrai.svg" alt="">
+            <img class="boder__icons-phai" src="./img/iconphai.svg" alt="">
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".shophouse .mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween:40 ,
+            freeMode: true,
+            pagination: {
+              el: ".swiper-pagination",
+              type: "progressbar",
+            },
+            navigation: {
+              nextEl: ".boder__icons-phai",
+              prevEl: ".boder__icons-trai",
+            },
+            breakpoints: {
+              // Nhỏ nhất bị ảnh hưởng là 0 - mobile đứng
+              0: {
+                slidesPerView:"auto",
+                spaceBetween: 20,
+              },
+              // Nhỏ nhất bị ảnh hưởng là 451px - mobile ngang
+              451: {
+                slidesPerView:"auto",
+                spaceBetween: 20,
+              },
+              // Nhỏ nhất bị ảnh hưởng là 768px - ipad đứng
+              768: {
+                slidesPerView:"auto",
+                spaceBetween: 20,
+              },
+              // Nhỏ nhất bị ảnh hưởng là 993px - ipad ngang
+              993: {
+                slidesPerView:"auto",
+                spaceBetween: 40,
+              },
+            },
+          });
+        </script>
+      </div>
+      <div class="discover">
+        <div class="container">
+          <div class="discover__back">
+            <div class="discover__max">
+              <img src="./img/Frame 78.png" alt="" />
+            </div>
+            <div></div>
+            <div class="discover__max1">
+              <div class="discover__max1-one">
+                Discover Next level of Living
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="next">
+        <div class="container">
+          <div class="next__top">
+            <div class="next__top-one">
+              6 lý do mua<br />
+              <span class="next__top-two">The Emerald 68</span>
+            </div>
+          </div>
+          <div class="next__end">
+            <div class="next__vitri">
+              <img src="./img/Group.svg" alt="" />
+              <div class="next__vitri-one">Vị trí kim cương</div>
+              <div class="next__vitri-two">
+                Tọa lạc ngay vị trí đắc địa, "tam cận" và tiếp giáp khu Đông Sài
+                Gòn, chỉ mất 5 - 20p để di chuyển vào trung tâm các các thành
+                phố và các tiện ích liền kề
+              </div>
+            </div>
+            <div class="next__vitri">
+              <img src="./img/Frame.svg12.svg" alt="" />
+              <div class="next__vitri-one">Tiện ích đa dạng bậc nhất</div>
+              <div class="next__vitri-two">
+                Hơn 20 tiệc ích phong cách Ngọc Lục Bảo hứa hẹn mang đến cho cư
+                dân một chốn đi về lý tưởng.
+              </div>
+            </div>
+            <div class="next__vitri">
+              <img src="./img/Frame.svg11.svg" alt="" />
+              <div class="next__vitri-one">Sản phẩm mang giá trị thật</div>
+              <div class="next__vitri-two">
+                Bên cạnh vị trí đắc địa do Lê Phong khai phá, The Emerald còn
+                được xây dưng bởi đội ngũ kỹ sư tâm huyết của Coteccons, chăm
+                chút đến từng chi tiết, phụ vụ nhuc ầu ở thực của người dân tại
+                khu vực bình Dương và TP.HCM.
+              </div>
+            </div>
+            <div class="next__vitri">
+              <img src="./img/Frame.svg3.svg" alt="" />
+              <div class="next__vitri-one">
+                Khu căn hộ phong cách nhiệt đới đầu tiên tại Bình Dương
+              </div>
+              <div class="next__vitri-two">
+                Sở hữu phong cách ven sông, được chủ đầu từ thiết kế thêm nhiều
+                mảng xanh đặt biệt mang đến các mảng xanh cho gia chủ một không
+                gian sống lý tưởng như resort.
+              </div>
+            </div>
+            <div class="next__vitri">
+              <img src="./img/Frame.svg4.svg" alt="" />
+              <div class="next__vitri-one">Thanh toán linh hoạt</div>
+              <div class="next__vitri-two">
+                Phương thức thanh toán The Emerald 68 vô cùng linh hoạt cho nhà
+                đầu tư.
+              </div>
+            </div>
+            <div class="next__vitri">
+              <img src="./img/Frame hihi.svg" alt="" />
+              <div class="next__vitri-one">Chủ đầu tư uy tín</div>
+              <div class="next__vitri-two">
+                Một trong những dự án chiến lược của Coteccons và Coteccons tại
+                địa bàn Thành phố Thuận An
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./img/Frame 79.png" alt="" />
+    </div>
+    <div class="bidv">
+      <div class="bidv__top">
+        <div class="bidv__top-img">
+          <img src="./img/the51.svg" alt="" />
+        </div>
+      </div>
+      <div class="bidv__top">
+        <div class="bidv__top-img">
+          <img src="./img/the51.svg" alt="" />
+        </div>
+      </div>
+      <div class="bidv__top">
+        <div class="bidv__top-img">
+          <img src="./img/the51.svg" alt="" />
+        </div>
+      </div>
+      <div class="bidv__top">
+        <div class="bidv__top-img">
+          <img src="./img/the51.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="doitac">
+      <div class="container">
+        <div class="doitac__text">Đối tác của chúng tôi</div>
+        <div class="doitac__top">
+          <div class="doitac__top-img">
+            <img src="./img/bidv.svg" alt="" />
+          </div>
+          <div class="doitac__top-img">
+            <img src="./img/land.svg" alt="" />
+          </div>
+          <div class="doitac__top-img">
+            <img src="./img/unicons.svg" alt="" />
+          </div>
+          <div class="doitac__top-img">
+            <img src="./img/ong.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tintuc">
+      <div class="container">
+        <div class="tintuc__top">
+          <div class="tintuc__top-one">Tin tức</div>
+          <div class="tintuc__menu">
+            <nav>
+              <div class="nav" id="nav-tab" role="tablist">
+                <button
+                  class="nav-link active tintuc__menu-one"
+                  id="nav-home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-home"
+                  aria-selected="true"
+                >
+                  TẤT CẢ
+                </button>
+                <button
+                  class="nav-link tintuc__menu-one"
+                  id="nav-profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-profile"
+                  aria-selected="false"
+                >
+                  TIN TỨC
+                </button>
+                <button
+                  class="nav-link tintuc__menu-one"
+                  id="nav-contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-contact"
+                  aria-selected="false"
+                >
+                  SỰ KIỆN
+                </button>
+                <button
+                  class="nav-link tintuc__menu-one"
+                  id="nav-video-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-video"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-video"
+                  aria-selected="false"
+                >
+                  VIDEO
+                </button>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+            tabindex="0"
+          >
+            <div class="tintuc__doan">
+              <div class="tintuc__chung">
+                <div class="tintuc__so">
+                  <div class="tintuc__so-one">13.9</div>
+                  <div class="tintuc__so-two">2023</div>
+                </div>
+                <div class="tintuc__quyhoach">
+                  <div class="tintuc__quyhoach-one">
+                    TP.Thuận An đón ‘cú huých’ hạ tầng trong quy hoạch đến năm
+                    2040
+                  </div>
+                  <div class="tintuc__quyhoach-two">
+                    Đồ án điều chỉnh quy hoạch chung đến năm 2040 của TP.Thuận
+                    An phê duyệt hàng loạt dự án hạ tầng giao thông nghìn tỉ
+                    giúp tăng khả năng kết nối đến TP.HCM, đáp ứng nhu cầu an cư
+                    của làn sóng giãn dân từ TP.HCM.
+                  </div>
+                  <div class="tintuc__quyhoach-three">TIN TỨC</div>
+                </div>
+              </div>
+              <div class="tintuc__image">
+                <img src="./img/Frame 113.png" alt="" />
+              </div>
+            </div>
+            <div class="tintuc__doan">
+              <div class="tintuc__chung">
+                <div class="tintuc__so">
+                  <div class="tintuc__so-one">13.9</div>
+                  <div class="tintuc__so-two">2023</div>
+                </div>
+                <div class="tintuc__quyhoach">
+                  <div class="tintuc__quyhoach-one">
+                    TP.Thuận An đón ‘cú huých’ hạ tầng trong quy hoạch đến năm
+                    2040
+                  </div>
+                  <div class="tintuc__quyhoach-two">
+                    Đồ án điều chỉnh quy hoạch chung đến năm 2040 của TP.Thuận
+                    An phê duyệt hàng loạt dự án hạ tầng giao thông nghìn tỉ
+                    giúp tăng khả năng kết nối đến TP.HCM, đáp ứng nhu cầu an cư
+                    của làn sóng giãn dân từ TP.HCM.
+                  </div>
+                  <div class="tintuc__quyhoach-three">TIN TỨC</div>
+                </div>
+              </div>
+              <div class="tintuc__image">
+                <img src="./img/Frame 113.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-profile"
+            role="tabpanel"
+            aria-labelledby="nav-profile-tab"
+            tabindex="0"
+          >
+            <div class="tintuc__doan">
+              <div class="tintuc__chung">
+                <div class="tintuc__so">
+                  <div class="tintuc__so-one">13.9</div>
+                  <div class="tintuc__so-two">2023</div>
+                </div>
+                <div class="tintuc__quyhoach">
+                  <div class="tintuc__quyhoach-one">
+                    TP.Thuận An đón ‘cú huých’ hạ tầng trong quy hoạch đến năm
+                    2040
+                  </div>
+                  <div class="tintuc__quyhoach-two">
+                    Đồ án điều chỉnh quy hoạch chung đến năm 2040 của TP.Thuận
+                    An phê duyệt hàng loạt dự án hạ tầng giao thông nghìn tỉ
+                    giúp tăng khả năng kết nối đến TP.HCM, đáp ứng nhu cầu an cư
+                    của làn sóng giãn dân từ TP.HCM.
+                  </div>
+                  <div class="tintuc__quyhoach-three">TIN TỨC</div>
+                </div>
+              </div>
+              <div class="tintuc__image">
+                <img src="./img/Frame 113.png" alt="" />
+              </div>
+            </div>
+            <div class="tintuc__doan">
+              <div class="tintuc__chung">
+                <div class="tintuc__so">
+                  <div class="tintuc__so-one">13.9</div>
+                  <div class="tintuc__so-two">2023</div>
+                </div>
+                <div class="tintuc__quyhoach">
+                  <div class="tintuc__quyhoach-one">
+                    TP.Thuận An đón ‘cú huých’ hạ tầng trong quy hoạch đến năm
+                    2040
+                  </div>
+                  <div class="tintuc__quyhoach-two">
+                    Đồ án điều chỉnh quy hoạch chung đến năm 2040 của TP.Thuận
+                    An phê duyệt hàng loạt dự án hạ tầng giao thông nghìn tỉ
+                    giúp tăng khả năng kết nối đến TP.HCM, đáp ứng nhu cầu an cư
+                    của làn sóng giãn dân từ TP.HCM.
+                  </div>
+                  <div class="tintuc__quyhoach-three">TIN TỨC</div>
+                </div>
+              </div>
+              <div class="tintuc__image">
+                <img src="./img/Frame 113.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a class="tintuc__button"> Xem tất cả tin tức </a>
+        </div>
+      </div>
+    </div>
+    <div class="border__hihi"></div>
+    <div class="lienhe">
+      <div class="container">
+        <div class="lienhe__top">
+          <div class="lienhe__top-one">Liên hệ</div>
+          <div class="lienhe__top-two">
+            Liên hệ nhân viên tư vấn để được cập nhật thông tin chính xác hoặc
+            để lại thông tin tại đây
+          </div>
+        </div>
+        <div class="lienhe__max">
+          <div class="lienhe__max-input">
+            <input type="text" placeholder="Họ và tên" />
+          </div>
+          <div class="lienhe__max-input">
+            <input type="number" placeholder="Số điện thoại" />
+          </div>
+          <div class="lienhe__max-input">
+            <input type="text" placeholder="Email" />
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button class="lienhe__button">
+            Gửi yêu cầu liên hệ<span
+              ><img src="./img/arrow-up-right.png" alt=""
+            /></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__the">
+            <img class="footer__the-img" src="./img/logofooter.svg" alt="" />
+            <div class="footer__the-div">
+              <a class="footer__the-text">tải tài liệu dự án</a>
+            </div>
+          </div>
+          <div class="footer__thongtin">
+            <div class="footer__thongtin-text">Thông tin liên hệ</div>
+            <div class="footer__thongtin-icons">
+              <img class="hhi" src="./img/Iconfooter1.svg" alt="" />
+              <span class="footer__thongtin-one">
+                Phường Vĩnh Phú, Thành phố Thuận An, Bình Dương
+              </span>
+            </div>
+            <div class="footer__thongtin-icons">
+              <img class="hhi" src="./img/Iconfoter2.svg" alt="" />
+              <span class="footer__thongtin-one">
+                0903.79.36.79<br />
+                0285.44.33.668
+              </span>
+            </div>
+            <div class="footer__thongtin-icons">
+              <img class="hhi" src="./img/Iconfoter3.svg" alt="" />
+              <span class="footer__thongtin-one"> contact@lephong.vn </span>
+            </div>
+          </div>
+          <div class="footer__hiuhiu"></div>
+          <div class="footer__thongtin">
+            <div class="footer__thongtin-text">Danh mục</div>
+            <ul class="footer__thongtin-max">
+              <li class="footer__thongtin-one">
+                <a href=""></a>Tổng quan dự án
+              </li>
+              <li class="footer__thongtin-onee"><a href=""></a>Thư viện</li>
+              <li class="footer__thongtin-onee"><a href=""></a>Tin tức</li>
+              <li class="footer__thongtin-onee"><a href=""></a>Liên hệ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banquyen">
+      <div class="container">
+        <div class="banquyen__max">
+          <div class="banquyen__top">
+            <span class="banquyen__top_text"> ©2023 Bản quyền thuộc về </span>
+            <img class="banquyen__img" src="./img/logolephong.svg" alt="" />
+            <img class="banquyen__img" src="./img/buiding.svg" alt="" />
+          </div>
+          <div class="banquyen__end">
+            <span class="banquyen__end-text"> Design and Development by </span>
+            <img src="./img/logo-twok.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hotline">
+      <img class="fab" src="img/FAB.svg" alt="" />
+    </div>
+  </body>
+</html>
