@@ -8,25 +8,8 @@ body {
   }
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  max-height: 100%;
+.bg{
+  background-color: red;
 }
 
 ul {
