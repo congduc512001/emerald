@@ -18,7 +18,9 @@ ul {
   margin-top: 0;
   margin-bottom: 0px;
 }
-
+.duc_ok{
+  display: flex;
+}
 a {
   text-decoration: none;
 }
